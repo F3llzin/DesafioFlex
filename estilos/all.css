@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+header > h1 {
+    font-size: 1.4em;
+}
+
+header > nav > a {
+    color: black;
+    background-color: orange;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+header > nav > a:hover {
+    color: white;
+    background-color: rgb(209, 136, 0);
+
+    transition: background-color, color .4s;
+}
+
+section#apresentacao {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+section#apresentacao > section {
+    flex: 0 1 500px;
+   
+}
+
+section#apresentacao > section#conteudo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+section#apresentacao > section#img {
+    display: flex;
+    justify-content: center;
+}
+
+section#img > img {
+    border-radius: 50%;
+}
+
+section#apresentacao h2 {
+    font-size: 2em;
+}
+
+section#apresentacao p {
+    font-size: 1.2em;
+    text-align: center;
+    text-indent: 1em;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+}
+
+section#apresentacao a {
+    color: black;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+section#apresentacao a:hover {
+    color: white;
+    background-color: rgb(209, 136, 0);
+
+    transition: background-color, color .4s;
+}
+
+section#colecao{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 24px;
+}
+
+section#colecao > section#cabeca {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 24px;
+    width: 90vw;
+}
+
+section#colecao > section#cabeca > div {
+    flex-basis: 600px;
+}
+
+section#colecao > section#cabeca > div#caixinha {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 150px;
+}
+
+section#colecao > section#cabeca h2 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+}
+
+div#caixinha > p {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 139);
+    color: white;
+    width: 200px;
+}
+
+div#sla {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div#sla > section#cards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 90vw;
+    max-width: 1200px;
+    justify-content: flex-start;
+}
+
+div#sla > section#cards > div {
+    flex: 0 0 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+div#sla > section#cards > div img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+div#sla > section#cards > div button {
+    margin-top: auto;
+}
+
+section#sobre {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 40px;
+}
+
+section#sobre h2 {
+    font-size: 1.7em;
+}
+
+section#sobre p {
+    width: 70vw;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: orange;
+    gap: 20px;
+    padding: 24px;
+}
+
+footer > p#projeto {
+    font-size: 2em;
+}
+
+footer > a {
+    background-color: black;
+    color: white;
+}
+
+footer > a:hover {
+    background-color: white;
+    color: black;
+
+    transition: background-color, color .7s;
+}
+
+@media (min-width: 680px) {
+    div#sla > section#cards > div {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+}
+
+@media (min-width: 1200px) {
+    div#sla > section#cards > div {
+        flex: 0 0 calc((100% - 40px) / 3);
+    }
+}
+
